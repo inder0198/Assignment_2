@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>String</title>
+</head>
+<body>
+{% block content %}
+
+<h1>String Assignment</h1>
+
+<h3>Vowels</h3>
+<form action="type1" method="POST">
+    {% csrf_token %}
+    Enter String: <input type="text" name="str1"><br><br>
+    <input type="submit" value="type1">
+
+</form>
+
+<h3>Reverse</h3>
+<form action="type2" method="POST">
+    {% csrf_token %}
+    Enter String: <input type="text" name="str2"><br><br>
+    <input type="submit" value="type2">
+</form>
+
+<h3>Alphanumeric</h3>
+<form action="type3" method="POST">
+    {% csrf_token %}
+    Enter String: <input type="text" name="str3"><br><br>
+    <input type="submit" value="type3">
+</form>
+
+<h3>Traverse</h3>
+<form action="type4" method="POST">
+    {% csrf_token %}
+    Enter String: <input type="text" name="str4"><br><br>
+    <input type="submit" value="type4">
+</form>
+
+<h3>Ascii</h3>
+<form action="type5" method="POST">
+    {% csrf_token %}
+    Enter String: <input type="text" name="str5"><br><br>
+    <input type="submit" value="type5">
+</form>
+
+
+<!--<h1> Result = {{result}} </h1>-->
+<h1> Result = {{result}} </h1>
+
+{% endblock %}
+</body>
+</html>
